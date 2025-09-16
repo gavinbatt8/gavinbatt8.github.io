@@ -151,14 +151,15 @@ main{ padding: 0 clamp(1rem, 4vw, 3.5rem); }
 }
 
 .profile-pic {
-  width: 160px;              /* size of the circle */
+  width: 160px;
   height: 160px;
-  object-fit: cover;         /* keeps proportions without stretching */
-  object-position: center top; /* shifts the crop to show more hair */
+  object-fit: cover;
+  object-position: center 20%; /* tweak this number */
   border-radius: 50%;
   border: 3px solid var(--accent);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
 
 
 .about-text {
