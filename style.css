@@ -1,0 +1,79 @@
+:root{
+  --bg:#0f1115;
+  --panel:#151823;
+  --text:#e6e6e6;
+  --muted:#a7b0c0;
+  --accent:#7aa2ff;
+  --accent-2:#ffb86b;
+  --ring:rgba(122,162,255,.35);
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; }
+body{
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background: var(--bg);
+  line-height:1.6;
+}
+
+h1,h2,h3{ line-height:1.2; margin:0 0 .6rem; }
+h1{ font-family: "Playfair Display", serif; font-size: clamp(2rem, 4vw, 3.2rem); }
+h2{ font-size: clamp(1.4rem, 2.5vw, 2rem); }
+h3{ font-size: 1.1rem; }
+
+a{ color:var(--accent); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.site-header{
+  padding: 1.2rem clamp(1rem, 4vw, 3.5rem);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo{
+  font-weight:700; color:var(--text);
+}
+.links a{
+  margin-left:1rem; color:var(--muted);
+}
+.links .cta{
+  padding:.45rem .8rem; border:1px solid var(--ring); border-radius:.6rem;
+  color:var(--text); background: linear-gradient(180deg, rgba(122,162,255,.12), rgba(122,162,255,.04));
+}
+.hero{
+  padding: 8vh 0 6vh;
+}
+.tagline{
+  color:var(--muted); max-width: 60ch;
+}
+
+main{ padding: 0 clamp(1rem, 4vw, 3.5rem); }
+
+.section{
+  margin: 3rem 0; padding: 1.2rem; background: rgba(21,24,35,.5);
+  border: 1px solid rgba(122,162,255,.12);
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+.grid{
+  display:grid; gap:1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card{
+  background: var(--panel);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:12px; padding:1rem;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover{
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 24px rgba(122,162,255,.15);
+}
+.more{ color: var(--accent-2); }
+
+.contact{
+  list-style:none; padding:0; margin:0; display:flex; gap:
