@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gavin — Creative Builder & AI Collaborator</title>
+  <meta name="description" content="The personal site of Gavin — exploring AI-augmented creativity, rapid iteration, and strategic project building." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">Gavin</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#workflow">Workflow</a>
+        <a class="cta" href="#contact">Contact</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>Building with AI, strategy, and relentless iteration.</h1>
+      <p class="tagline">I treat AI tools as collaborators — blending automation, creativity, and clean design to build faster and smarter.</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m Gavin — a student, builder, and strategist.  
+        My work blends minimal design, AI-augmented workflows, and a focus on measurable impact.  
+        Every project is both a product and a process — documented for portfolio and admissions value.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Personal Website (Vibe Coding)</h3>
+          <p>A minimal HTML/CSS site built entirely in a creative flow with AI tools — focusing on process over complexity.</p>
+        </article>
+        <article class="card">
+          <h3>AI-Augmented Writing Studio</h3>
+          <p>Exploring literary analysis and creative writing with AI as a co-author and editor.</p>
+        </article>
+        <article class="card">
+          <h3>Rapid Prototyping Experiments</h3>
+          <p>Testing how quickly ideas can move from concept to live demo using automation and AI collaboration.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="workflow" class="section">
+      <h2>My Workflow</h2>
+      <p>
+        I work in short, iterative loops:  
+        <strong>Prompt → Build → Review → Refine</strong>.  
+        Using GitHub Copilot, ChatGPT, and Claude in VS Code, I scaffold structure, generate ideas, and iterate quickly — staying in a constant feedback loop.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Let’s connect — whether it’s for collaboration, questions, or sharing ideas.</p>
+      <ul class="contact">
+        <li><a href="mailto:gavin@example.com">gavin@example.com</a></li>
+        <li><a href="https://www.linkedin.com/in/gavin" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Gavin. Built with a vibe-first, AI-augmented workflow.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
