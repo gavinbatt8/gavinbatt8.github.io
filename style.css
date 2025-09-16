@@ -138,3 +138,36 @@ main{ padding: 0 clamp(1rem, 4vw, 3.5rem); }
   flex: 1;
   min-width: 240px;
 }
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* stacks on small screens */
+}
+
+.about-photo {
+  flex: 0 0 auto;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.name-heading {
+  font-size: clamp(2.5rem, 6vw, 3.8rem);
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
