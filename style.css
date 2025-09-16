@@ -115,6 +115,15 @@ main{ padding: 0 clamp(1rem, 4vw, 3.5rem); }
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
+.name-heading {
+  font-size: clamp(2.5rem, 6vw, 3.8rem); /* large but responsive */
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+
 .about-text {
   flex: 1;
   min-width: 240px;
