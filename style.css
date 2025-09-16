@@ -76,4 +76,25 @@ main{ padding: 0 clamp(1rem, 4vw, 3.5rem); }
 .more{ color: var(--accent-2); }
 
 .contact{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.site-footer{
+  color:var(--muted);
+  padding: 3rem clamp(1rem, 4vw, 3.5rem);
+  text-align:center;
+  opacity:.9;
+}
+
+/* Small screens */
+@media (max-width: 640px){
+  .links a{ margin-left:.6rem; }
+  .section{ padding:.9rem; }
+}
+
   list-style:none; padding:0; margin:0; display:flex; gap:
